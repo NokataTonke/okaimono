@@ -28,17 +28,22 @@ public class SellConfirm {
 				break;
 		}
 
-		System.out.println("アイテム屋のおばちゃん：「" + selectItem + "を1つ売ってくれるのかい？」");
-		System.out.println("[あなたの所持金] \\" + HeroBag.money);
+		System.out.println
+				("アイテム屋のおばちゃん：「" + selectItem + "を1つ売ってくれるのかい？」");
+		System.out.println
+				("[あなたの所持金] \\" + HeroBag.money);
 		System.out.println();
-		System.out.println(selectItem + "所持数：" + hbItem + "個");
-		System.out.println("1.YES 2.NO");
+		System.out.println
+				(selectItem + "所持数：" + hbItem + "個");
+		System.out.println
+				("1.YES 2.NO");
 		System.out.println();
 
 		int j = new java.util.Scanner(System.in).nextInt();
 			if(j == 1) { // 売る。YESを選択した場合
 				if(hbItem > 0) { // 選択した売りたいアイテムが1つ以上ある場合
-				System.out.println(selectItem + "を1つ売った！");
+				System.out.println
+						(selectItem + "を1つ売った！");
 					switch(i) {
 						case 1:
 							HeroBag.yakuso--;
@@ -61,12 +66,13 @@ public class SellConfirm {
 							HeroBag.money += sellingPrice;
 							break;
 					}
-					System.out.println("[あなたの所持金] \\" + HeroBag.money);
+					System.out.println
+							("[あなたの所持金] \\" + HeroBag.money);
 					System.out.println();
 
 				} else { // 選択した売りたいアイテムが1つもない（0以下）の場合
 					System.out.println
-					("アイテム屋のおばちゃん：「なんだ、1つも持ってないじゃないか。」");
+							("アイテム屋のおばちゃん：「なんだ、1つも持ってないじゃないか。」");
 					System.out.println();
 
 				}
@@ -74,7 +80,7 @@ public class SellConfirm {
 			}
 			if(j == 2) { //売らない。NOの時の処理
 				System.out.println
-				("アイテム屋のおばちゃん：「売らないのかい？わかったよ。」");
+						("アイテム屋のおばちゃん：「売らないのかい？わかったよ。」");
 				System.out.println();
 
 			}

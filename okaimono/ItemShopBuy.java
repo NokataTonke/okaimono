@@ -1,11 +1,13 @@
 package okaimono;
 
 public class ItemShopBuy {
-	public void ListDisply() {
-		System.out.println("-------------");
+	public void optionDisply() {
 		System.out.println
-		("アイテム屋のおばちゃん：「何が欲しいんだい？」");
-		System.out.println("[あなたの所持金] \\" + HeroBag.money);
+				("-------------");
+		System.out.println
+				("アイテム屋のおばちゃん：「何が欲しいんだい？」");
+		System.out.println
+				("[あなたの所持金] \\" + HeroBag.money);
 		System.out.println();
 		System.out.println(
 				"1.薬草(\\100)" + "(" + HeroBag.yakuso + "有)　" +
@@ -40,10 +42,12 @@ public class ItemShopBuy {
 
 		int k;
 		do {
-			System.out.println("-------------");
 			System.out.println
-			("アイテム屋のおばちゃん：「他に欲しい物はあるかい？」");
-			System.out.println("[あなたの所持金] \\" + HeroBag.money);
+					("-------------");
+			System.out.println
+					("アイテム屋のおばちゃん：「他に欲しい物はあるかい？」");
+			System.out.println
+					("[あなたの所持金] \\" + HeroBag.money);
 			System.out.println();
 			System.out.println(
 					"1.薬草(\\100)" + "(" + HeroBag.yakuso + "有)　" +
@@ -73,8 +77,10 @@ public class ItemShopBuy {
 					bc.buyConfirm(5, HeroBag.tabako);
 					break;
 				case 6:
-					System.out.println("アイテム屋のおばちゃん：「他にも何かようかい？」");
-					System.out.println("[あなたの所持金] \\" + HeroBag.money);
+					System.out.println
+							("アイテム屋のおばちゃん：「他にも何かようかい？」");
+					System.out.println
+							("[あなたの所持金] \\" + HeroBag.money);
 					System.out.println();
 					break;
 			}

@@ -1,11 +1,13 @@
 package okaimono;
 
 public class ItemShopSell {
-	public void ListDisply() {
-		System.out.println("-------------");
+	public void optionDisply() {
 		System.out.println
-		("アイテム屋のおばちゃん：「何を売りたいんだい？」");
-		System.out.println("[あなたの所持金] \\" + HeroBag.money);
+				("-------------");
+		System.out.println
+				("アイテム屋のおばちゃん：「何を売りたいんだい？」");
+		System.out.println
+				("[あなたの所持金] \\" + HeroBag.money);
 		System.out.println();
 		System.out.println(
 				"1.薬草(\\100)" + "(" + HeroBag.yakuso + "有)　" +
@@ -13,7 +15,7 @@ public class ItemShopSell {
 				"3.酒(\\300)" +  "(" + HeroBag.sake + "有)　");
 		System.out.println(
 				"4.煙幕(\\500)" + "(" + HeroBag.enmaku + "有)　" +
-				"5.タバコ(\\3000)" + "(" + HeroBag.tabako + "有)　");
+				"5.タバコ(\\480)" + "(" + HeroBag.tabako + "有)　");
 		System.out.println();
 
 		int i = new java.util.Scanner(System.in).nextInt();
@@ -39,10 +41,12 @@ public class ItemShopSell {
 
 		int k;
 		do {
-			System.out.println("-------------");
 			System.out.println
-			("アイテム屋のおばちゃん：「他にも売りたい物はあるかい？」");
-			System.out.println("[あなたの所持金] \\" + HeroBag.money);
+					("-------------");
+			System.out.println
+					("アイテム屋のおばちゃん：「他にも売りたい物はあるかい？」");
+			System.out.println
+					("[あなたの所持金] \\" + HeroBag.money);
 			System.out.println();
 			System.out.println(
 					"1.薬草(\\100)" + "(" + HeroBag.yakuso + "有)　" +
@@ -50,7 +54,7 @@ public class ItemShopSell {
 					"3.酒(\\300)" +  "(" + HeroBag.sake + "有)　");
 			System.out.println(
 					"4.煙幕(\\500)" + "(" + HeroBag.enmaku + "有)　" +
-					"5.タバコ(\\3000)" + "(" + HeroBag.tabako + "有)　" +
+					"5.タバコ(\\480)" + "(" + HeroBag.tabako + "有)　" +
 					"6. もう大丈夫");
 			System.out.println();
 
@@ -72,8 +76,10 @@ public class ItemShopSell {
 					sc.sellConfirm(5, HeroBag.tabako);
 					break;
 				case 6:
-					System.out.println("アイテム屋のおばちゃん：「他にも何かようかい？」");
-					System.out.println("[あなたの所持金] \\" + HeroBag.money);
+					System.out.println
+							("アイテム屋のおばちゃん：「他にも何かようかい？」");
+					System.out.println
+							("[あなたの所持金] \\" + HeroBag.money);
 					System.out.println();
 					break;
 			}
