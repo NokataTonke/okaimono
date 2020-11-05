@@ -19,8 +19,8 @@ public class ItemShopSell {
 		System.out.println();
 
 		int i = new java.util.Scanner(System.in).nextInt();
-		int j;
 		SellConfirm sc = new SellConfirm();
+
 		switch(i) {
 			case 1:
 				sc.sellConfirm(1, HeroBag.yakuso);

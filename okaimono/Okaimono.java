@@ -42,6 +42,7 @@ public class Okaimono {
 				("-------------");
 		System.out.println
 				("武具屋の親父：「らっしゃい！調子はどうだい？」");
+		System.out.println();
 
 	}
 }

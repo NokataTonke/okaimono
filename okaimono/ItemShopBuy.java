@@ -19,7 +19,6 @@ public class ItemShopBuy {
 		System.out.println();
 
 		int i = new java.util.Scanner(System.in).nextInt();
-		int j;
 		BuyConfirm bc = new BuyConfirm();
 
 		switch(i) {

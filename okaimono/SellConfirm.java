@@ -4,6 +4,7 @@ public class SellConfirm {
 	public void sellConfirm(int i, int hbItem) {
 		String selectItem = null;
 		int sellingPrice = 0;
+		int nowMoney = HeroBag.money;
 
 		switch(i) {
 			case 1:
@@ -31,10 +32,16 @@ public class SellConfirm {
 		System.out.println
 				("アイテム屋のおばちゃん：「" + selectItem + "を1つ売ってくれるのかい？」");
 		System.out.println
-				("[あなたの所持金] \\" + HeroBag.money);
-		System.out.println();
+				("-------------");
 		System.out.println
-				(selectItem + "所持数：" + hbItem + "個");
+				("[買取金額] \\" + sellingPrice);
+		System.out.println
+				("[あなたの所持金] \\" + HeroBag.money + "　→　\\" + (nowMoney + sellingPrice));
+		System.out.println
+				("現在の" + selectItem + "所持数：" + hbItem + "個");
+		System.out.println
+				("-------------");
+		System.out.println();
 		System.out.println
 				("1.YES 2.NO");
 		System.out.println();
